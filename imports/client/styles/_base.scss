@@ -12,7 +12,7 @@ html {
 body {
   background-color: $body-background-color;
   color: $body-text-color;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: $body-font-family;
   font-size: $base-font-size;
 }
 
@@ -34,9 +34,11 @@ a {
   color: $body-text-color;
 }
 
-input[type=text], input[type=email], input[type=password] {
+input[type=text], input[type=email], input[type=password], textarea {
   border: 1px solid $input-border;
+  color: $body-text-color;
   font-size: $base-font-size;
+  font-family: $body-font-family;
   margin-bottom: $space;
   padding: $input-spacing;
 }
