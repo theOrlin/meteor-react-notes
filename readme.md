@@ -1,6 +1,6 @@
 # Notes App
 
-This is a notes application built on Meteor with React while learning from a Udemy Course.
+This is a notes application built on Meteor with React while learning from the Udemy course [*Full-Stack Web Apps with Meteor and React*](https://www.udemy.com/meteor-react/).
 
 ## Getting Started
 
