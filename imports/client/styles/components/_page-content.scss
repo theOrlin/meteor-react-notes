@@ -10,14 +10,27 @@
 }
 
 .page-content__sidebar {
-  padding-right: $large-space;
-  display: none;
-  width: $page-content-sidebar-width;
+  display: flex;
+  width: 100vw;
+  transition: left .3s ease;
+
+  position: fixed;
+  top: $header-height;
+  left: -100vw;
+  bottom: 0;
 
   @include desktop(50rem) {
     display: flex;
+    padding-right: $large-space;
+    position: static;
+    width: $page-content-sidebar-width;
+  }
+
+  .is-nav-open & {
+    left: 0;
   }
 }
+
 
 .page-content__main {
   display: flex;
